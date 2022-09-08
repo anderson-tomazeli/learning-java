@@ -1,0 +1,17 @@
+package fundamentos.operadores;
+
+public class DesafioLogicos {
+
+	public static void main(String[] args) {
+		//Trabalho na terça  (V ou F)
+		//Trabalho na quinta (V ou F)
+		
+		boolean trabalho_terca  = true;
+		boolean trabalho_quinta = true;
+		
+		boolean comprou_tv_50 = trabalho_terca && trabalho_quinta;
+		boolean comprou_tv_32 = trabalho_terca || trabalho_quinta;
+		
+		boolean tomar_sorvete_juntos = comprou_tv_32 ^ comprou_tv_50;
+	}
+}

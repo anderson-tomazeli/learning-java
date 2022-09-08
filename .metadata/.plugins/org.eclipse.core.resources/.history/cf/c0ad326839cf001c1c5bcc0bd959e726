@@ -1,0 +1,32 @@
+package fundamentos.operadores;
+
+public class DesafioLogicos {
+
+	public static void main(String[] args) {
+		//Trabalho na terça  (V ou F)
+		//Trabalho na quinta (V ou F)
+		
+		boolean trabalho_terca  = true;
+		boolean trabalho_quinta = false;
+		
+		boolean comprou_tv_50 = trabalho_terca && trabalho_quinta;
+		boolean comprou_tv_32 = trabalho_terca ^ trabalho_quinta;
+		
+		boolean tomar_sorvete_juntos = comprou_tv_32 ^ comprou_tv_50;
+		
+		boolean ficar_em_casa = !trabalho_terca && !trabalho_quinta;
+		
+		boolean sou_saudavel = ficar_em_casa;
+		
+		System.out.println("trabalho_terca       : "  + trabalho_terca);
+		System.out.println("trabalho_quinta      : " + trabalho_quinta);
+
+		System.out.println("comprou_tv_50        : " + comprou_tv_50);
+		System.out.println("comprou_tv_32        : " + comprou_tv_32);
+		
+		System.out.println("tomar_sorvete_juntos : " + tomar_sorvete_juntos);
+		System.out.println("ficar_em_casa        : " + ficar_em_casa);
+		System.out.println("sou_saudavel         : " + sou_saudavel);
+		
+	}
+}
